@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Fitness Journey Starts Here | Fitness Coach</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" style="display: flex; align-items: center; background-color: #f8f8f8; padding: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <img src="images/logo.png" alt="Fitness Coach Logo" style="height: 50px; margin-right: 10px;">
+                <span style="font-size: 24px; font-weight: bold; color: #007bff; ; letter-spacing: 1px;">Sifc6m</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#transformation">Transformation</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Body</h1>
+                <!-- <p>Achieve your fitness goals with our expert-guided programs</p> -->
+                <a href="#resources" class="cta-button">
+                    Get Started
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="arrow-icon">
+                        <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>From Self-Transformation to Helping Others: Your Fitness Coach</h2>
+            <div class="coach-profile">
+                <div class="coach-card" style="display: flex; align-items: center; background-color: #f1ebeb; border-radius: 15px; padding: 20px; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);">
+                    <div class="coach-image" style="margin-right: 20px;">
+                        <img src="images/coach.jpg" alt="Your Fitness Coach" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #007bff;">
+                    </div>
+                    <h3 style="font-size: 24px; color: #333; margin: 0;">Shaik Saifan</h3>
+                </div>
+                <br>
+                <p class="coach-title">Certified Personal Trainer & Nutritionist</p>
+            </div>
+            <div class="coach-description">
+                <p>As a self-taught fitness enthusiast with years of personal experience, I'm passionate about helping others transform their bodies and lives.</p>
+                <ul class="coach-credentials">
+                    <li>Self-trained fitness expert</li>
+                    <li>Specializes in body transformation</li>
+                    <li>Personalized approach to fitness and nutrition</li>
+                </ul>
+                <p>Join me on a journey to a healthier, stronger you. Your success is my motivation!</p>
+            </div>
+        </section>
+
+        <section id="transformation" class="transformation">
+            <h2>Real Results, Real Transformations</h2>
+            <div class="transformation-image">
+                <img src="images/transformation.jpeg" alt="Before and After Transformation">
+            </div>
+            <p>See the incredible transformations our community members have achieved!</p>
+        </section>
+
+        <section id="resources" class="resources">
+            <h2>Free Fitness Resources</h2>
+            <p>Download our comprehensive fitness guide to kickstart your journey:</p>
+            <a href="pdfs/fitness-guide.pdf" class="download-button" download>Download PDF Guide</a>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Join Our Community</h2>
+            <div class="social-links">
+                <a href="https://instagram.com/your-profile" target="_blank" class="social-link">
+                    <img src="images/instagram.png" alt="Instagram">
+                    <span>Instagram</span>
+                </a>
+                <a href="https://youtube.com/your-channel" target="_blank" class="social-link">
+                    <img src="images/youtube.png" alt="YouTube">
+                    <span>YouTube</span>
+                </a>
+                <a href="https://wa.me/your-whatsapp-number" target="_blank" class="social-link">
+                    <img src="images/whatsapp.png" alt="WhatsApp">
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Fitness Coach. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
